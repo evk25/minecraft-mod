@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package evk25.orecraft.OreCraft;
 
 public class ClientProxy extends CommonProxy {
 

@@ -11,13 +11,13 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import orecraft.core.Tags;
 
-@Mod(modid = MyMod.MODID, version = Tags.VERSION, name = "MyMod", acceptedMinecraftVersions = "[1.7.10]")
-public class MyMod {
+@Mod(modid = OreCraft.MODID, version = Tags.VERSION, name = "OreCraft", acceptedMinecraftVersions = "[1.7.10]")
+public class OreCraft {
 
-    public static final String MODID = "mymodid";
+    public static final String MODID = "OreCraft";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
-    @SidedProxy(clientSide = "com.myname.mymodid.ClientProxy", serverSide = "com.myname.mymodid.CommonProxy")
+    @SidedProxy(clientSide = "evk25.orecraft.OreCraft.ClientProxy", serverSide = "evk25.orecraft.OreCraft.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
